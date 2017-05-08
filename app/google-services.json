@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "33730322408",
+    "firebase_url": "https://animereminder-9bcf0.firebaseio.com",
+    "project_id": "animereminder-9bcf0",
+    "storage_bucket": "animereminder-9bcf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33730322408:android:d3cf0fdd53c61a5a",
+        "android_client_info": {
+          "package_name": "com.project.shiraz.animereminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33730322408-452f2q1av9644v5631thunns8pkvpk3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.shiraz.animereminder",
+            "certificate_hash": "e56467839f41ae15bfe8321db775adcf98c54f96"
+          }
+        },
+        {
+          "client_id": "33730322408-tlp604k9t8tpltm688ce838lskat02l4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5fNX3vNP6F1rzsqRckNLI7WIlWWDOgVE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33730322408-tlp604k9t8tpltm688ce838lskat02l4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
