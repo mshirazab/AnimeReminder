@@ -1,18 +1,18 @@
-package com.project.shiraz.animereminder;
+package com.project.shiraz.animereminder.JsonStructures;
 
-import android.util.Log;
+import com.project.shiraz.animereminder.JsonStructures.EpisodeUnit;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.TimeZone;
 
-class EpisodeDetails {
-    String Name;
-    EpisodeUnit[] Episodes;
-    int Seasons;
+public class EpisodeDetails {
+    public String Name;
+    public ArrayList<EpisodeUnit> Episodes;
+    public long Seasons;
 
-    private long convertTime(String date) {
+    public static long convertTime(String date) {
         String[] dateArray = date.split(" ");
         int currentDate;
         long unixTime = 0;
@@ -24,16 +24,15 @@ class EpisodeDetails {
         DateFormat dateFormat = new SimpleDateFormat("ddMMMyyyy");
         try {
             Date Date = dateFormat.parse(dateString);
-            unixTime = (long) Date.getTime() / 1000;
+            unixTime = Date.getTime() / 1000;
         } catch (Exception ignored) {
         }
-        return unixTime;
+        return unixTime + 10*60*60;
     }
 
-    String convertTime(long unixSeconds) {
+    public static String convertTime(long unixSeconds) {
         Date date = new Date(unixSeconds * 1000L);
         SimpleDateFormat sdf = new SimpleDateFormat("dd MMM yyyy");
-        sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
         return sdf.format(date);
     }
 }
