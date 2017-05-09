@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     tools:context="com.project.shiraz.animereminder.MainActivity">
 
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/episode_listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
 
     <ProgressBar
         android:id="@+id/main_progressbar"
